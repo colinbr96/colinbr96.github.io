@@ -1,0 +1,28 @@
+a.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility: hidden
+}
+a.light {
+	color: #9acbfe;
+	text-decoration: none;
+}
+a.light:hover, a.light:focus {
+	color: #84add9;
+	text-decoration: underline;
+}
+
+a.dark {
+	color: #333333;
+}
+a.dark:hover, a.dark:focus {
+	color: #000000;
+}
+p.contact-row {
+	padding: 10px 0px 0px 10px;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
