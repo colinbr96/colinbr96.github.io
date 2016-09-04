@@ -2,6 +2,7 @@
 
 
 colinbrown.xyz
+Hosted with GitHub Pages
 Copyright: Colin Brown
 
 
@@ -10,7 +11,7 @@ Copyright: Colin Brown
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Othello - Colin Brown</title>
 
     <!-- Favicon -->
@@ -42,9 +43,11 @@ Copyright: Colin Brown
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Forces mobiles to smaller Bootstrap -->
     <meta name="theme-color" content="#282828"> <!-- Theming for Google Chrome for Android -->
    
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/lightbox-dark.css">
 </head>
 
 <body>
@@ -156,26 +159,26 @@ Copyright: Colin Brown
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="http://i.imgur.com/V3eT665" target="_blank">
-                    <img class="img-responsive portfolio-item" src="http://i.imgur.com/QlXX6nn.png" alt="">
+                <a href="images/othello1.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Source Code">
+                    <img class="img-responsive portfolio-item" src="thumbnails/othello1.png" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="http://imgur.com/D64RfwT" target="_blank">
-                    <img class="img-responsive portfolio-item" src="http://i.imgur.com/ewDtMF6.png" alt="">
+                <a href="images/othello2.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Main Menu">
+                    <img class="img-responsive portfolio-item" src="thumbnails/othello2.png" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="http://imgur.com/PXfFno3" target="_blank">
-                    <img class="img-responsive portfolio-item" src="http://i.imgur.com/PyB0nUD.png" alt="">
+                <a href="images/othello3.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Settings Menu">
+                    <img class="img-responsive portfolio-item" src="thumbnails/othello3.png" alt="">
                 </a>
             </div>
 
             <div class="col-sm-3 col-xs-6">
-                <a href="http://imgur.com/fh5jBJR" target="_blank">
-                    <img class="img-responsive portfolio-item" src="http://i.imgur.com/PNEEIaM.png" alt="">
+                <a href="images/othello4.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Gameplay">
+                    <img class="img-responsive portfolio-item" src="thumbnails/othello4.png" alt="">
                 </a>
             </div>
 
@@ -189,9 +192,14 @@ Copyright: Colin Brown
     </div>
 
     <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/smoothscroll.js"></script>
-
+    <script src="../js/lightbox.min.js"></script>
+    <script>
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(){
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
+</html>
