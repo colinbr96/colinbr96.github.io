@@ -1,0 +1,16 @@
+{
+	"title": "Smooth Gray",
+	"alias": "smooth_gray",
+	"subtitle": "Minimalist grayscale theme for Google Chrome",
+	"photo_alt": "Smooth Gray Chrome theme",
+	"brief_description": "With a sense of dissatisfaction by the selection of themes available on <a href=\"https://chrome.google.com/webstore\" target=\"_blank\">Google’s Chrome Web Store</a>, I decided to just make my own. Smooth Gray will theme your Chrome with a remarkably simple office look. The grayscale palette is great for staying focused on actual web content, instead of the browser itself. This theme is fantastic and timeless.",
+	"reflection": "Smooth Gray was created using the <a href=\"https://www.themebeta.com/chrome-theme-creator-online.html\" target=\"_blank\">Chrome Theme Creator</a> online tool. I simply generated the necessary images using Adobe Fireworks, uploaded them, and tweaked the details to my liking. I have considered creating variants of the theme, but the original is still timeless. By maintaining this page and the Smooth Gray download, I hope that others get a chance to enjoy the theme as well.",
+	"how_to_use": [
+		"Download SmoothGray.crx from the button above.",
+		"In Google Chrome, press Ctrl-O (&#8984;O on Mac)",
+		"Select the SmoothGray.crx file",
+		"Click (Continue)",
+		"Click (Add theme)"
+	],
+	"download_link": "https://drive.google.com/file/d/0B1G0xJh0c-yAQW1lVEN4bGY1LWM/view?usp=sharing"
+}
