@@ -1,0 +1,16 @@
+{
+	"title": "Othello",
+	"alias": "othello",
+	"subtitle": "The classic board game recreated with Python",
+	"photo_alt": "Othello made with Python",
+	"brief_description": "In one of my Information &amp; Computer Science courses at UCI, &#8220;Programming with Software Libraries&#8221;, we learned how to code graphical user interfaces in Python using a library called TK. We were assigned a project to develop the game Othello <a href=\"https://en.wikipedia.org/wiki/Reversi\" target=\"_blank\">(aka Reversi)</a> and implement it using a responsive interface. This program is the result of two weeks of my hard work and dedication.",
+	"reflection": "When I first began writing the code for Othello, the assignment was actually broken into two parts. The first step was to code the game logic. This was before we had made the interface, so everything was on the command line. I spent a lot of time on the logic, but I felt fairly comfortable writing it. After we had completed the first part, the second step was to create a GUI. We were required to use Python’s TK library to implement it, since that was the material being taught at the time. I felt this part was significantly harder, since I had to spend a lot of time researching TK while simultaneously coding the project. Overall, this assignment was an excellent test of my Python programming abilities. Although it was difficult at times, I thoroughly enjoyed the development process.",
+	"how_to_use": [
+		"<a href=\"https://www.python.org/downloads/\" target=\"_blank\">Download Python</a> for your operating system.",
+		"Download the Othello source code linked above.",
+		"Open \"othello_gui.py\" in the <a href=\"https://docs.python.org/library/idle.html\" target=\"_blank\">IDLE</a> editor.",
+		"Click on (Run &#8594; Run Module) in the menu bar.",
+		"Enjoy the game!"
+	],
+	"download_link": "https://drive.google.com/file/d/0B1G0xJh0c-yAcnpUc1JqcVo2TG8/view?usp=sharing"
+}

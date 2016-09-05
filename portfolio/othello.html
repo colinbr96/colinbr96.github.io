@@ -2,8 +2,8 @@
 
 
 colinbrown.xyz
-Hosted with GitHub Pages
 Copyright: Colin Brown
+Hosted with GitHub Pages
 
 
 -->
@@ -43,6 +43,7 @@ Copyright: Colin Brown
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Forces mobiles to smaller Bootstrap -->
     <meta name="theme-color" content="#282828"> <!-- Theming for Google Chrome for Android -->
    
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../css/main.min.css">
@@ -50,7 +51,7 @@ Copyright: Colin Brown
     <link rel="stylesheet" href="../css/lightbox-dark.css">
 </head>
 
-<body>
+<body onload="applyTemplate()">
 
     <!-- Navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -73,118 +74,8 @@ Copyright: Colin Brown
         </div>
     </nav>
 
-    <!-- Page content -->
-    <div class="container" style="padding: 50px 20px 30px 20px">
-
-        <div class="row">
-
-            <!-- Breadcrumbs -->
-            <div class="col-lg-12">
-                <ol class="breadcrumb">
-                    <li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li class="active">Othello</li>
-                </ol>
-            </div>
-
-            <!-- Title -->
-            <div class="col-lg-12">
-                <h1>                   
-                    Othello
-                    <br>
-                    <small>The classic board game recreated with Python</small>
-                </h1>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Project contents -->
-        <div class="row">
-            
-            <!-- Picture -->
-            <div class="col-lg-7">
-                <img class="img-responsive img-rounded" src="../images/portfolio/othello.jpg" alt="Othello made with Python" style="box-shadow: 2px 4px 5px #C9C9C9;">
-            </div>
-
-            <!-- Sidebar -->
-            <div class="col-lg-5">
-                <h3>Brief Description</h3>
-                <p>In one of my Information &amp; Computer Science courses at UCI, &#8220;Programming with Software Libraries&#8221;, we learned how to code graphical user interfaces in Python using a library called TK. We were assigned a project to develop the game <a href="https://en.wikipedia.org/wiki/Reversi" target="_blank">Othello</a> and implement it using a responsive interface. This program is the result of two weeks of my hard work and dedication.</p>
-                <br>
-                <a class="btn btn-default" href="https://drive.google.com/file/d/0B1G0xJh0c-yAcnpUc1JqcVo2TG8/view?usp=sharing" target="_blank">
-                    <span class="glyphicon glyphicon-save"></span>&nbsp;&nbsp;Download
-                </a>
-            </div>
-
-            <hr class="hidden-lg">
-
-            <!-- Software License -->
-            <div class="col-lg-12">
-                <h3>Software License</h3>
-                <p>
-                    Licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons</a> Attribution-NonCommercial-ShareAlike
-                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="What&rsquo;s this?"><span class="glyphicon glyphicon-question-sign"></span></a>
-                    <br>
-                    By downloading, sharing, or using this project, you accept and agree to be bound by the terms and conditions of this license.
-                </p>
-            </div>
-
-            <hr class="hidden-lg">
-
-            <!-- Extra info -->
-            <div class="col-lg-7">
-                <h3>Reflection</h3>
-                <p>When I first began writing the code for Othello, the assignment was actually broken into two parts. The first step was to code the game logic. This was before we had made the interface, so everything was on the command line. I spent a lot of time on the logic, but I felt fairly comfortable writing it. After we had completed the first part, the second step was to create a GUI. We were required to use Python&rsquo;s TK library to implement it, since that was the material being taught at the time. I felt this part was significantly harder, since I had to spend a lot of time researching TK while simultaneously coding the project. Overall, this assignment was an excellent test of my Python programming abilities. Although it was difficult at times, I thoroughly enjoyed the development process.</p>
-            </div>
-
-            <hr class="hidden-lg">
-
-            <div class="col-lg-5">
-                <h3>How to Use</h3>
-                <ul>
-                	<li><a href="https://www.python.org/downloads/" target="_blank">Download Python</a> for your operating system.</li>
-                    <li>Download the Othello source code linked above.</li>
-                	<li>Open "othello_gui.py" in the <a href="https://docs.python.org/library/idle.html" target="_blank">IDLE</a> editor.</li>
-                	<li>Click on (Run &#8594; Run Module) in the menu bar.</li>
-                	<li>Enjoy the game!</li>
-                </ul>
-            </div>
-
-            <hr class="hidden-lg">
-
-            <!-- Screenshots -->
-            <div class="col-lg-12">
-                <h3>Screenshots</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="images/othello1.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Source Code">
-                    <img class="img-responsive portfolio-item" src="thumbnails/othello1.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="images/othello2.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Main Menu">
-                    <img class="img-responsive portfolio-item" src="thumbnails/othello2.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="images/othello3.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Settings Menu">
-                    <img class="img-responsive portfolio-item" src="thumbnails/othello3.png" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="images/othello4.png" data-toggle="lightbox" data-gallery="screenshots" data-title="Gameplay">
-                    <img class="img-responsive portfolio-item" src="thumbnails/othello4.png" alt="">
-                </a>
-            </div>
-
-        </div>
-
-    </div>
+    <!-- Gets filled by template -->
+    <div id="contents"></div>
 
     <!-- Footer -->
     <div class="container-fluid" style="color: #dddddd; background-color: #282828; padding-top: 10px; text-align: center">
@@ -195,6 +86,8 @@ Copyright: Colin Brown
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/lightbox.min.js"></script>
+    <script src="../js/mustache.js"></script>
+    <script src="js/template-othello.js"></script>
     <script>
         $(document).delegate('*[data-toggle="lightbox"]', 'click', function(){
             event.preventDefault();
