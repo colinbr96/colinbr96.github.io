@@ -359,5 +359,12 @@ Copyright: Colin Brown
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".navbar-left li").on("click", function () {
+                $('.navbar-collapse.in').collapse('hide');
+            });
+        });
+     </script>
 </body>
 </html>
