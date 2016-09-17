@@ -125,9 +125,9 @@ Copyright: Colin Brown
 
             	<!-- 1st: Othello -->
                 <div class="col-md-6" style="padding-bottom: 50px;">
-                    <div style="text-align: center">
+                    <a href="portfolio/othello.html">
                         <img src="images/portfolio/othello.jpg" class="img-responsive img-rounded" alt="Othello made with Python" style="margin:0 auto; box-shadow: 2px 4px 5px #242424;">
-                    </div>
+                    </a>
                     <h3>Othello Project</h3>
                     <p style="padding-bottom: 10px">In one of my Information &amp; Computer Science courses at UCI, &#8220;Programming with Software Libraries&#8221;, we learned how to code graphical user interfaces in Python using a library called TK. We were assigned a project to develop the game <a class="light" href="https://en.wikipedia.org/wiki/Reversi" target="_blank">Othello</a> and implement it using a responsive interface. This program is the result of two weeks of my hard work and dedication.</p>
                     <center>
@@ -139,7 +139,9 @@ Copyright: Colin Brown
 
                 <!-- 2nd: Smooth Gray -->
                 <div class="col-md-6" style="padding-bottom: 50px;">
-                    <img src="images/portfolio/smooth_gray.jpg" class="img-responsive img-rounded" alt="Smooth Gray Chrome theme" style="margin:0 auto; box-shadow: 2px 4px 5px #242424;">
+                    <a href="portfolio/smooth_gray.html">
+                        <img src="images/portfolio/smooth_gray.jpg" class="img-responsive img-rounded" alt="Smooth Gray Chrome theme" style="margin:0 auto; box-shadow: 2px 4px 5px #242424;">
+                    </a>
                     <h3>Smooth Gray</h3>
                     <p style="padding-bottom: 10px;">With a sense of dissatisfaction by the selection of themes available on <a href="https://chrome.google.com/webstore" target="_blank">Google’s Chrome Web Store</a>, I decided to just make my own. Smooth Gray will theme your Chrome with a remarkably simple office look. The grayscale palette is great for staying focused on actual web content, instead of the browser itself. This theme is fantastic and timeless.</p>
                     <center>
@@ -361,10 +363,8 @@ Copyright: Colin Brown
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".navbar-right li").on("click", function () {
-                $('.navbar-collapse.in').collapse('hide');
-            });
+        $('.nav a').on('click', function(){
+            $('.navbar-toggle').click()
         });
      </script>
 </body>
