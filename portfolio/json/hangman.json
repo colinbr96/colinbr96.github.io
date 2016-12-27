@@ -1,0 +1,14 @@
+{
+	"title": "Hangman",
+	"alias": "hangman",
+	"subtitle": "The timeless childhood game, made in C++",
+	"photo_alt": "Hangman ASCII art",
+	"brief_description": "Although I have spent many hours writing C++ code that implements data structure classes and helper functions for homework assignments, before starting this project, I had yet experienced the act of sitting down to write something <i>fun</i> in C++. I poked around the web seeking simple games that could be programmed for command line interfaces. Hangman was one of the results that piqued my interest. This project is the result of a few days of weekend/vacation spare time.",
+	"reflection": "I first started this project when I created the GitHub repository and experimented with ASCII art that now composes the title screen. At the time, however, I was too busy with other schoolwork to code the full game and decided to put it off until later. Once Christmas break came around, I found myself looking through old project folders and saw this, in its barely-begun state. I still wanted the experience of writing C++ for fun, so I decided to start and finish the game with my time off. It only took two days to write the code for Hangman and I am happy with the result. The word list is very basic at the moment, but I hope to add updates in the future.",
+	"how_to_use": [
+		"Download the Hangman source code from the GitHub link above.",
+		"Compile and run hangman.cpp with the C++ compiler of your choice.",
+		"Enjoy the game!"
+	],
+	"download_link": "https://github.com/colinbr96/hangman"
+}

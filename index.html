@@ -91,7 +91,7 @@ Copyright: Colin Brown
     <!-- About Me -->
     <a name="about" style="position: relative; top: -80px;"></a>
     <div class="container" style="padding-bottom: 50px;">
-        <img src="images/profile.jpg" class="img-responsive img-circle" style="width: 20%; display: block; margin: auto; min-height: 150px; min-width: 150px">
+        <img src="https://lh3.googleusercontent.com/X7NzmM3wPWKm5ZE96-M5-sAIrqoWaaZx1mWdd5KZLis3FdEHesPU2A4TkeRnrYPlaUoIybTaG32ovO07aRIsdoujE1ZfjrA2=w1280-h800-rw-no" class="img-responsive img-circle" style="width: 20%; display: block; margin: auto; min-height: 150px; min-width: 150px">
         <h1 class="text-center">About Me</h1>
         <p class="text-center lead">Throughout my life, I have embodied certain qualities that define my character.</p>
         <div class="row">
@@ -364,8 +364,9 @@ Copyright: Colin Brown
     <script src="js/smoothscroll.js"></script>
     <script>
         $('.nav a').on('click', function(){
-            $('.navbar-toggle').click()
-        });
+    		if($(window).width() < 768)
+        	$('.navbar-toggle').click();
+		});
      </script>
 </body>
 </html>
